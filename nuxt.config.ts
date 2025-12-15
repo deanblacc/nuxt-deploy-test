@@ -13,5 +13,21 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+
+  // Disable features that don't work well with static GitHub Pages hosting
+  features: {
+    inlineStyles: true
+  },
+
+  experimental: {
+    payloadExtraction: false
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/']
+    }
+  }
 })
