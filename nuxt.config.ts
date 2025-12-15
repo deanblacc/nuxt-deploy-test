@@ -5,7 +5,6 @@ export default defineNuxtConfig({
 
   app: {
     baseURL: '/nuxt-deploy-test/',
-    buildAssetsDir: 'assets',
     head: {
       title: 'My Nuxt App',
       link: [
@@ -15,11 +14,6 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
-
-  // Disable features that don't work well with static GitHub Pages hosting
-  features: {
-    inlineStyles: true
-  },
 
   experimental: {
     payloadExtraction: false
