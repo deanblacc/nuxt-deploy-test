@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="nuxtGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00dc82;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00c16a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="40" fill="#1e293b"/>
+  <path d="M200 80 L320 280 L80 280 Z" fill="url(#nuxtGradient)"/>
+  <path d="M200 140 L260 240 L140 240 Z" fill="#1e293b"/>
+  <circle cx="200" cy="320" r="20" fill="#00dc82"/>
+</svg>
