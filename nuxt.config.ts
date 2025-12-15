@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   app: {
     baseURL: '/nuxt-deploy-test/',
-    cdnURL: '/nuxt-deploy-test/',
+    buildAssetsDir: 'assets',
     head: {
       title: 'My Nuxt App',
       link: [
