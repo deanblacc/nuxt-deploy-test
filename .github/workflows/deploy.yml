@@ -37,10 +37,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm install
-      # - name: Build
-      #   run: npx nuxt build --preset github_pages
-      #   env:
-      #     NUXT_APP_BASE_URL: /nuxt-deploy-test/
+      - name: Build
+        run: npm run generate
+        env:
+          NUXT_APP_BASE_URL: /nuxt-deploy-test/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
